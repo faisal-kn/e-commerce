@@ -1,3 +1,3 @@
-export function showAll() {
-    return {type:"ALL"};
+export function showAll(product) {
+    return {type:"ALL",products:product};
 }

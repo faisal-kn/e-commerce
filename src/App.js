@@ -1,19 +1,26 @@
 import { Routes, Route, Navigate } from "react-router-dom";
 import React,{useEffect} from "react";
-import {useDispatch,useSelector} from "react-redux";
-import { showAll } from "./redux/action/actionlist";
+import {useDispatch} from "react-redux";
+import { showAll} from "./redux/action/actionlist";
 import Home from "./pages/Home";
+import axios from "axios";
+
 
 const App = () => {
   const dispatch=useDispatch();
-  useEffect(() => {
-    dispatch(showAll());
-  }, [])
-  const data=useSelector(state=>state.DataAll);
-  console.log(data);
-  function handle() {
-    console.log(data);
+  const handle=()=>{
+    axios.get("https://api.rainforestapi.com/request?api_key=9FC93C86FC414B858615F615A7007E1F&type=product&asin=B000YDDF6O&amazon_domain=amazon.com").then((response) => {
+      console.log(response.data);
+      dispatch(showAll(response.data));
+    });
   }
+  useEffect(() => {
+    
+    handle();
+  }, [])
+ 
+  
+  
   return (
     <Routes>
       <Route path="/home" element={<Home />}></Route>
