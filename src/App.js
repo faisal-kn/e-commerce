@@ -8,16 +8,16 @@ import axios from "axios";
 
 const App = () => {
   const dispatch=useDispatch();
-  const handle=()=>{
-    axios.get("https://api.rainforestapi.com/request?api_key=9FC93C86FC414B858615F615A7007E1F&type=product&asin=B000YDDF6O&amazon_domain=amazon.com").then((response) => {
-      console.log(response.data);
-      dispatch(showAll(response.data));
-    });
-  }
-  useEffect(() => {
+  // const handle=()=>{
+  //   axios.get("https://api.fakeshop-api.com/products/getAllProducts").then((response) => {
+  //     console.log(response.data);
+  //     dispatch(showAll(response.data));
+  //   });
+  // }
+  // useEffect(() => {
     
-    handle();
-  }, [])
+  //   handle();
+  // }, [])
  
   
   
