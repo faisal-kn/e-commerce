@@ -1,0 +1,75 @@
+.title{
+    font-size:15px;
+    font-family: 'Poppins';
+    margin:0 0;
+    white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis 
+}
+.price{
+    color: #444;
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 1;
+    margin:0;
+}
+.options{
+    position: relative;
+    min-height:90px;
+    overflow: hidden;
+}
+.quickview{
+    position: absolute;
+    bottom: -10px;
+    background-color: rgba(0,0,0,0.7);
+    text-align: center;
+    color: white;
+    font-family: 'Roboto';
+    font-size: 25px;
+    width: 100%;
+    opacity: 0;
+    height: 40px;
+    padding: 5px 0;
+    z-index: 100;
+    transition-timing-function: linear;
+    transition-duration: 0.25s;
+    /* transform: scaleY(0); */
+}
+
+.addCart{
+    position: absolute;
+    height: 30px;
+    width:30px;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    /* font-weight: 500; */
+    border:1px solid #d4d1cb;
+    top:10px;
+    right:10px;
+    transition-timing-function: linear;
+    transition-duration: 0.3s;
+    display: none;
+}
+.addCart:hover{
+    color: white;
+    background-color: #444;
+    transition-timing-function: linear;
+    transition-duration: 0.3s;
+}
+.card{
+    width: 80%;
+    margin: auto;
+}
+.card:hover .addCart{
+    display: flex;
+    transition-timing-function: linear;
+    transition-duration: 0.3s;
+}
+.card:hover .quickview{
+    bottom: 10px;
+    opacity: 1;
+    transition-timing-function: linear;
+    transition-duration: 0.25s;
+}
