@@ -1,11 +1,11 @@
 import { Routes, Route, Navigate } from "react-router-dom";
 import React,{useEffect} from "react";
 import {useDispatch} from "react-redux";
-import { showAll} from "./redux/action/actionlist";
+// import { showAll} from "./redux/action/actionlist";
 import Home from "./pages/Home";
 import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
-import axios from "axios";
+// import axios from "axios";
 
 
 const App = () => {
