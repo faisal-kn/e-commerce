@@ -15,7 +15,7 @@
 }
 .options{
     position: relative;
-    min-height:90px;
+    height:200px;
     overflow: hidden;
 }
 .quickview{
