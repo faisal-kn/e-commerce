@@ -2,6 +2,6 @@ import {combineReducers} from 'redux';
 import DataReducer from './DataReducer';
 
 const ReducersList=combineReducers({
-    DataAll:DataReducer
+    DataStore:DataReducer
 })
 export default ReducersList;

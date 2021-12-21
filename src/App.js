@@ -1,7 +1,8 @@
 import { Routes, Route, Navigate } from "react-router-dom";
 import React,{useEffect} from "react";
 import {useDispatch} from "react-redux";
-// import { showAll} from "./redux/action/actionlist";
+import dataArray from "./data/Data";
+import { showAll} from "./redux/action/actionlist";
 import Home from "./pages/Home";
 import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
@@ -11,10 +12,11 @@ import SignUp from "./pages/SignUp";
 const App = () => {
   const dispatch=useDispatch();
   // const handle=()=>{
-  //   axios.get("https://api.fakeshop-api.com/products/getAllProducts").then((response) => {
-  //     console.log(response.data);
-  //     dispatch(showAll(response.data));
-  //   });
+  //   // axios.get("https://api.fakeshop-api.com/products/getAllProducts").then((response) => {
+  //   //   console.log(response.data);
+  //   //   dispatch(showAll(response.data));
+  //   // });
+  //   dispatch(showAll(dataArray));
   // }
   // useEffect(() => {
     

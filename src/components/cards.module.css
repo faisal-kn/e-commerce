@@ -1,7 +1,7 @@
 .title{
     font-size:15px;
     font-family: 'Poppins';
-    margin:0 0;
+    margin:0 0 !important;
     white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis 
@@ -11,7 +11,7 @@
     font-weight: 600;
     font-size: 1.125rem;
     line-height: 1;
-    margin:0;
+    margin-top:5px;
 }
 .options{
     position: relative;
@@ -28,11 +28,12 @@
     font-size: 25px;
     width: 100%;
     opacity: 0;
-    height: 40px;
+    height: 42px;
     padding: 5px 0;
     z-index: 100;
     transition-timing-function: linear;
     transition-duration: 0.25s;
+    cursor: pointer;
     /* transform: scaleY(0); */
 }
 
@@ -45,12 +46,14 @@
     align-items: center;
     border-radius: 50%;
     /* font-weight: 500; */
+    background-color: white;
     border:1px solid #d4d1cb;
     top:10px;
     right:10px;
     transition-timing-function: linear;
     transition-duration: 0.3s;
     display: none;
+    cursor: pointer;
 }
 .addCart:hover{
     color: white;
@@ -59,8 +62,8 @@
     transition-duration: 0.3s;
 }
 .card{
-    width: 80%;
-    margin: auto;
+    /* width: 80%; */
+    /* margin: auto; */
 }
 .card:hover .addCart{
     display: flex;
@@ -68,7 +71,7 @@
     transition-duration: 0.3s;
 }
 .card:hover .quickview{
-    bottom: 10px;
+    bottom: 0px;
     opacity: 1;
     transition-timing-function: linear;
     transition-duration: 0.25s;

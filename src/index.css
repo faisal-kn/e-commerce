@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 body{
-  background-color: #888;
+  background-color: #f4f4f4 !important;
   width: 100%;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
