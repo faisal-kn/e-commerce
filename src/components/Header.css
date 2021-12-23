@@ -1,0 +1,71 @@
+.header {
+  background-image: url(https://www.portotheme.com/magento2/porto/pub/media/wysiwyg/smartwave/porto/homepage/18/01n.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.shoeImage {
+  width: 55%;
+}
+
+.header-maincontent {
+  width: 40%;
+  margin-left: 5vw;
+  color: white;
+}
+
+.bigHeading {
+  display: inline-block;
+  font-size: 6vw;
+  font-weight: bolder;
+  margin-left: 3vw;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+#containerScaled {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  background-color: red;
+}
+
+/* #followC {
+  transition: all 0.9s ease-out;
+  transform-origin: center;
+} */
+
+.box {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  background-color: transparent;
+}
+.boxcolored {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  background-color: green;
+}
+/* 
+.mouseFollow {
+  position: relative;
+  height: 20px;
+  width: 75px;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  background-color: yellow;
+} */

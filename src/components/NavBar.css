@@ -12,6 +12,17 @@
   }
 }
 
-.navbar-expand-lg .navbar-collapse{
-    justify-content: space-around;
+.navbar-expand-lg .navbar-collapse {
+  justify-content: space-around;
+}
+
+.nav-end__items {
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (min-width: 1080px) {
+  .check {
+    margin-left: 290px;
+  }
 }
