@@ -6,8 +6,8 @@ import { showAll } from "./redux/action/actionlist";
 import Home from "./pages/Home";
 import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
-import NavBar from "./components/NavBar";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 // import axios from "axios";
 
 const App = () => {
@@ -34,6 +34,7 @@ const App = () => {
         <Route path="/home" element={<Home />}></Route>
         <Route path="/" element={<Navigate replace to="/home" />} />
       </Routes>
+      <Footer />
     </>
   );
 };
